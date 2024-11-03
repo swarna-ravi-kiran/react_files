@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <!--bable js is used to  convert javascript elements to  react elements-->
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+       function Header(props){     //Header should be start with capital letter for  access the  function in html  format
+        //props = { bgColor : "black"}
+        var properties = {
+            color : props.bgColor
+        }
+return(
+    <h2 style = {properties}> Creating Home Page </h2>
+)
+       }
+       function Main(){
+        return(
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vero deserunt blanditiis nam facilis obcaecati doloremque eligendi alias, unde, 
+            earum ipsam magni sapiente officia? Eveniet, consequuntur! Vitae vel unde quidem? loream50
+             </p>
+         )
+       }
+       function Footer(){
+        return(
+          <h2 style = {{color : "green"}}>Footer Section </h2>
+        )
+       }
+       function Mymain(){
+        return(
+            <div>
+        <div><Header bgColor = "red"/> </div>
+        <div><Main/></div>
+        <div><Footer/></div>
+        </div>
+            )
+       }
+
+        ReactDOM.render(<Mymain/>,document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>

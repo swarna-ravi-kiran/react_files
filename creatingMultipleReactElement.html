@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        var h1ref = React.createElement("div",
+        {
+        id:"div",
+        class:"ele",
+        style:{color:"red",backgroundColor:"black",width:"500px"}
+    },
+        React.createElement("h2",
+        {
+            style:{fontStyle:"italic"}
+        },
+        "creating h2 element inside the div"))  //here creating element using the javascript
+        //<div> creating the div  element </div>
+        ReactDOM.render(h1ref,document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>

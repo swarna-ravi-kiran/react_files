@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        var h1ref = React.createElement("h1",null,"my library is React")  //here creating element using the javascript
+        //<h1> my library is react </h1>
+        ReactDOM.render(h1ref,document.getElementById("root"))  //this is like appendchild in javascript
+    // var paraRef = React.createElement("p",null,"loream nsdfjksagafjkhkfjsjfjdskhfgb")
+    // //     //<p> loream nsdfjksagafjkhkfjsjfjdskhfgb </p>
+    //     ReactDOM.render(paraRef,document.getElementById("body"))
+    </script>
+</body>
+</html>

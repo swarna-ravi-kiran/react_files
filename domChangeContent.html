@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function changeContent(){
+    document.getElementById("title").innerText = "Hello javascript"
+    document.getElementById("paragraph").innerText = "this  content belongs to javascript"
+    pRef = document.createElement("p") //<p> </p>
+    pRef.innerText = "ravikiran swarna sdfjkdggbhsbhsghsdfj" //<p> "ravikiran swarna sdfjkdggbhsbhsghsdfj"</p>
+    document.getElementById("body").appendChild(pRef)
+}
+    </script>
+</head>
+<body id="body">
+    <h2 id="title">Document  Object</h2>
+    <p  id ="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, at labore? Ab, aut inventore! Aliquam reprehenderit, obcaecati non beatae dolore cupiditate ad odio reiciendis molestiae, debitis dolorum dolores, dolorem deserunt.</p>
+    <button onclick="changeContent()">change  content</button>  <!--ikkada onclick anedi attribute or we can  call it  as a  event listner-->
+</body>
+</html>

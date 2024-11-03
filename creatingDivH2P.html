@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<style>
+    .hell{
+        font-weight: bold;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        var container = React.createElement("div",null,[
+            React.createElement("h2",{
+                id:"h2",
+                class:"hell",
+                style:{
+                fontSize:"24px",
+                color : "red"
+            }},"Creating the h2 element inside the div"),
+            React.createElement("p",{
+                style:{
+                    fontSize:"20px",
+                    backgroundColor:"green",
+                    width:"500px",
+                    height:"30px"
+                }
+            },"loream on the jhkhsdfbkhkhkhsdfhksdhfhkh"),
+            React.createElement("button",null,"Button")
+        ])
+        ReactDOM.render(container,document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>

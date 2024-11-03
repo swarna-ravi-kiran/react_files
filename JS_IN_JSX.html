@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <!--bable js is used to  convert javascript elements to  react elements-->
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        var  userName = "swarna";
+        var email  = "ravi@gmail.com"
+        var container = (
+            <div> 
+                <h2>USER  DETAILS</h2>
+                <ol>
+                    <li>{userName}</li>
+                    <li>{email}</li>
+                </ol>
+            </div>
+    );
+        ReactDOM.render(container,document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>

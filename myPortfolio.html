@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <!--bable js is used to  convert javascript elements to  react elements-->
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Header(){
+            var head = {
+               backgroundColor : "black",
+               color : "white",
+               display:"flex",
+               justifyContent :"space-evenly",
+            //    padding : "5px",
+               gap:"100px"
+            }
+            return(
+                <div  style = {head}>
+               <h2> My Portfolio </h2>
+               <div style = {head}>
+                <h3> Home </h3>
+                <h3> Profile </h3>
+                <h3> Resume </h3>
+                <h3> Contact </h3>
+                </div>
+            </div>
+        )
+        }
+        function Image(){
+            var ravi = {
+                borderradious : "50px"
+            }
+        return(
+        <div style = {{borderRadious : "50%"}}>
+              <img src ="https://up.yimg.com/ib/th?id=OIP.rKVHomQTwEnGFitIKLDZ1wHaJV&pid=Api&rs=1&c=1&qlt=95&w=88&h=111" width = "400px" height = "400px"/>
+        </div>
+        )
+        }
+        function Main(){
+      return(
+        <div>
+            <h3>Hi  There!!</h3>
+            <h2>I am Sneha </h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem maxime, 
+                adipisci, distinctio nesciunt ea corporis at illum, deleniti nemo iste accusantium excepturi perspiciatis animi natus nisi? Asperiores, temporibus sit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem maxime, 
+                    adipisci, distinctio nesciunt ea corporis at illum, deleniti nemo iste accusantium excepturi perspiciatis animi natus nisi? Asperiores, temporibus sit!</p>
+                <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa rem maxime, 
+                    adipisci, distinctio nesciunt ea corporis at illum, deleniti nemo iste accusantium excepturi perspiciatis animi natus nisi? Asperiores, temporibus sit!</b></p>   
+        </div>
+      )
+        }
+        function Container(){
+            var con = {
+             display : "flex",
+             justifyContent : "space-evenly",
+             padding:"150px",
+             margin: "50px",
+             columnGap:"10rem",
+            }
+            return(
+                <div style = {con} >
+                    <div><Image/></div>
+                    <div><Main/></div>
+                </div>
+            )
+        }
+        function MyWholeMain(){
+            return(
+                <div>
+                    <div><Header/></div>
+                    <div><Container/></div>
+                </div>
+            )
+        }
+        ReactDOM.render(<MyWholeMain/>,document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>

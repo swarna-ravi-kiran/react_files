@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <!--bable js is used to  convert javascript elements to  react elements-->
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function fnlist(){
+            return(
+            <ul>
+                <li>VIVO</li>
+                <li>SAMSUNG</li>
+                 <li>APPLE</li>
+            </ul>
+        )
+        }
+        function fnpara(){
+            return (
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maiores voluptatem obcaecati aperiam quos sedj jhbsdfafghghjgjhsghdg,jhhgajdfhahfasfshdfgh
+                    </p>
+                )
+        }
+        function fnheading(){
+            return (
+                <h2>MY DETAILS</h2>
+            )
+        }
+        function main(){
+        return(
+      <div>
+        <div>{fnheading()} {fnpara()}</div>
+        <div>{fnlist()}</div>
+        <div>{fnpara()} {fnpara()}</div>
+      </div>
+       )
+        }
+        ReactDOM.render(main(),document.getElementById("root"))
+       </script>
+</body>
+</html>

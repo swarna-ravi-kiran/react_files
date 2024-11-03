@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script> <!--this is Reactjs library file-->
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <!--this is react-dom file-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <!--bable js is used to  convert javascript elements to  react elements-->
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function card(title,bgColor){
+        var cardStyle = {
+           boxShadow:"0 0 10px red",
+           padding:"10px",
+           backgroundColor:bgColor,
+           color:'white',
+           margin:"50px ",
+           textalign:"center"
+        }
+        var cardRef = (
+            <div style = {cardStyle}>  
+            <h2>{title}</h2> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi iusto a, 
+                officia at impedit placeat perferendis aliquid excepturi harum, 
+                porro mollitia perspiciatis ipsam inventore optio nobis sunt assumenda aliquam corrupti!</p>                     
+            </div> 
+    );
+    return cardRef
+}
+function main(){
+    return(
+        <div>
+            {card("Title - 1","black")} {card("Title - 2","green")}
+        </div>
+    )
+}
+        ReactDOM.render(main(),document.getElementById("root"))  //this is like appendchild in javascript
+    </script>
+</body>
+</html>
