@@ -1,0 +1,4 @@
+'https://fakestoreapi.com/products/category/jewelery'
+'https://fakestoreapi.com/products/category/electronics'
+'https://fakestoreapi.com/products/category/men's clothing'
+'https://fakestoreapi.com/products/category/women's clothing'

@@ -1,0 +1,21 @@
+.profileConatiner{
+    box-shadow: 0 0 10px green;
+    width: 900px;
+    height: 400%;
+    margin: 30px auto;
+    display: flex;
+    /* background-color: white; */
+    /* color: black; */
+}
+.image{
+    width: 40%;
+    height: 100%;
+}
+.description{
+    width: 60%;
+    padding: 30px;
+}
+.MainContainer h2{
+    text-align: center;
+    margin-top: 70px;
+}
